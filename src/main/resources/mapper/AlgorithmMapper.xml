@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace= "com.analysis.mapper.AlgorithmMapper" >
+    <resultMap id ="Algorithm" type="com.analysis.pojo.Algorithm">
+        <result column="algo_id" property="algo_id"/>
+        <result column="algo_name" property="algo_name"/>
+        <result column="algo_status" property="algo_status"/>
+    </resultMap>
+
+    <select id = "queryAllAlgorithm" resultMap="Algorithm">
+        select
+          algo_id,
+          algo_name,
+          algo_status
+        from
+          algorithm
+    </select>
+
+</mapper>

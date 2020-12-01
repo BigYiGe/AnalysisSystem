@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:each="item:${devices}">
+        <span th:text="${item.getDevice_id()}">id</span>
+        <span th:text="${item.getDevice_name()}">name</span>
+        <span th:text="${item.isDevice_status()}">status</span>
+    </div>
+</body>
+</html>

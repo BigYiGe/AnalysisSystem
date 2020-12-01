@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <link href="../static/css/layui.css" rel="stylesheet" th:href="@{/css/layui.css}" />
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.css" rel='stylesheet' type='text/css' th:href="@{/css/bootstrap.css}" />
+    <!-- Custom CSS -->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' th:href="@{/css/style.css}" />
+    <!-- font CSS -->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.css" rel="stylesheet" th:href="@{/css/font-awesome.css}" />
+    <!-- //font-awesome icons -->
+    <!-- js-->
+    <script src="../static/js/jquery-1.11.1.min.js" th:src="@{/js/jquery-1.11.1.min.js}"></script>
+    <script src="../static/js/modernizr.custom.js" th:src="@{/js/modernizr.custom.js}"></script>
+    <!--webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+    <!--animate-->
+    <link href="../static/css/animate.css" rel="stylesheet" type="text/css" th:href="@{/css/animate.css}" media="all">
+    <script src="../static/js/wow.min.js" th:src="@{/js/wow.min.js}"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+    <!-- chart -->
+    <script src="../static/js/Chart.js" th:src="@{/js/Chart.js}"></script>
+    <!-- //chart -->
+    <!--End Calender-->
+    <!-- Metis Menu -->
+    <script src="../static/js/metisMenu.min.js" type="text/javascript" th:src="@{/js/metisMenu.min.js}"></script>
+    <script src="../static/js/custom.js" type="text/javascript" th:src="@{/js/custom.js}"></script>
+    <link href="../static/css/custom.css" rel="stylesheet" th:href="@{/css/custom.css}" />
+    <!--//Metis Menu -->
+</head>
+<body class="cbp-spmenu-push">
+<div class="main-content">
+    <!--left-fixed -navigation-->
+    <div class=" sidebar" role="navigation">
+        <div class="navbar-collapse">
+            <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="/" class="active"><i class="fa fa-home nav_icon"></i>Welcome</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-cogs nav_icon"></i>机械信号分析 </span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-book nav_icon"></i>历史记录 </span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-check-square-o nav_icon"></i>个人信息</span></a>
+                    </li>
+                    <li>
+                        <a href="manage.html"><i class="fa fa-table nav_icon"></i>管理<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="/manage/algorithm">算法管理</a>
+                            </li>
+                            <li>
+                                <a href="/manage/device">设备管理</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html"><i class="fa fa-file-text-o nav_icon"></i>注册/登录<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="./login.html">登录</a>
+                            </li>
+                            <li>
+                                <a href="signup.html">注册</a>
+                            </li>
+                        </ul>
+                        <!-- //nav-second-level -->
+                    </li>
+                </ul>
+                <!-- //sidebar-collapse -->
+            </nav>
+        </div>
+    </div>
+    <!--left-fixed -navigation-->
+    <!-- header-starts -->
+    <div class="sticky-header header-section ">
+        <div class="header-left">
+            <!--toggle button start-->
+            <button id="showLeftPush"><i class="fa fa-bars"></i></button>
+            <!--toggle button end-->
+            <!--logo -->
+            <div class="logo">
+                <a href="/hello">
+                    <h1>机械设备智能运维分析系统</h1>
+                    <span>Analysis System</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="header-right">
+            <div class="profile_details_left"><!--notifications of menu start -->
+                <div class="clearfix"> </div>
+            </div>
+            <!--notification menu end -->
+            <div class="profile_details">
+                <ul>
+                    <li class="dropdown profile_details_drop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <div class="profile_img">
+                                <span class="prfil-img"><img src="images/n.png" alt=""> </span>
+                                <div class="user-name">
+                                    <p>van</p>
+                                    <span>Administrator</span>
+                                </div>
+                                <i class="fa fa-angle-down lnr"></i>
+                                <i class="fa fa-angle-up lnr"></i>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu drp-mnu">
+                            <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!-- //header-ends -->
+    <!-- main content start-->
+    <div id="page-wrapper">
+        <div class="main-page">
+            <div class="blank-page widget-shadow scroll" id="style-2 div1">
+                <div class="layui-btn-group demoTable">
+                    <button class="layui-btn" data-type="addAlgorithm">添加算法</button>
+                </div>
+               <table class="layui-table" id="test" style="width:100%" align="center" lay-filter="demo"></table>
+
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-sm" lay-event="edit">编辑</a>
+                    <a class="layui-btn layui-btn-danger layui-btn-sm" lay-event="del">删除</a>
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <p>Copyright &copy; 2020.All rights reserved.</p>
+    </div>
+    <!--//footer-->
+</div>
+<!-- Classie -->
+
+<script src="../static/js/classie.js" type="text/javascript" th:src="@{/js/classie.js}"></script>
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        body = document.body;
+
+    showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+    };
+
+
+    function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
+        }
+    }
+</script>
+<!--scrolling js-->
+<script src="../static/js/jquery.nicescroll.js" type="text/javascript" th:src="@{/js/jquery.nicescroll.js}"></script>
+<script src="../static/js/scripts.js" type="text/javascript" th:src="@{/js/scripts.js}"></script>
+<!--//scrolling js-->
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/js/bootstrap.js" type="text/javascript" th:src="@{/js/bootstrap.js}"> </script>
+
+<script src="../static/js/custom.js" type="text/javascript" th:src="@{/js/custom.js}"></script>
+
+<script src="../static/js/layui.js" charset="utf-8" type="text/javascript" th:src="@{/js/layui.js}"></script>
+
+<script th:inline="javascript">
+    layui.use('table', function(){
+        var table = layui.table;
+        var msg = [[${algorithms}]];
+        table.render({
+            elem: '#test'
+            ,data: eval(msg)
+            ,title: '算法数据表'
+            ,totalRow: true
+            ,cols: [ [
+                 {field:'algo_id', title:'ID', width:'20%', fixed: 'left', unresize: true, sort: true, align:'center'}
+                ,{field:'algo_name', title:'算法名', width:'20%', align:'center'}
+                ,{field:'algo_status', title:'是否可用', width:'20%', align:'center'}
+                ,{fixed: 'right', title:"操作", width:'40%', align:'center', toolbar: '#barDemo'}
+            ] ]
+            ,page: true
+            ,response: {
+                statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            }
+            ,parseData: function(res){ //将原始数据解析成 table 组件所规定的数据
+                return {
+                    "code": res.status, //解析接口状态
+                    "msg": res.message, //解析提示文本
+                    "count": res.total, //解析数据长度
+                    "data": res.rows.item //解析数据列表
+                };
+            }
+        });
+
+        table.on('tool(demo)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'del'){
+                alert('del')
+                confirm('真的删除行么', function(index){
+                    obj.del();
+                });
+            } else if(obj.event === 'edit'){
+                alert('edit')
+            }
+
+        });
+
+        var $ = layui.$, active = {
+            addAlgorithm: function(){ //获取选中数据
+                alert('haha')
+            }
+        };
+
+        $('.demoTable .layui-btn').on('click', function(){
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>

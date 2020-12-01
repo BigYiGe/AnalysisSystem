@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace= "com.analysis.mapper.UserMapper" >
+    <resultMap id ="User" type="com.analysis.pojo.User">
+        <result column="user_id" property="user_id"/>
+        <result column="user_name" property="user_name"/>
+        <result column="password" property="password"/>
+        <result column="email" property="email"/>
+        <result column="authority" property="authority"/>
+    </resultMap>
+
+    <select id = "queryUser" resultMap="User">
+        select
+          user_id,
+          user_name,
+          password,
+          email,
+          authority
+        from
+          users
+    </select>
+
+</mapper>
